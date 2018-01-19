@@ -1,0 +1,52 @@
+{
+  "name": "bootstrap4-admin-dashboard-template",
+  "description": "Bootstrap 4 admin dashboard template",
+  "version": "0.0.1",
+  "keywords": [
+    "bootstrap",
+    "bootstrap-4",
+    "admin-dashboard",
+    "admin-template",
+    "css-template"
+  ],
+  "homepage": "https://mazipan.github.io/bootstrap4-admin-dashboard-template/",
+  "author": "Irfan Maulana (https://github.com/mazipan/)",
+  "scripts": {
+    "dev": "gulp build:dev",
+    "prod": "gulp build:prod",
+    "dist": "gulp build:prod",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazipan/bootstrap4-admin-dashboard-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mazipan/bootstrap4-admin-dashboard-template/issues"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-connect": "^5.2.0",
+    "gulp-gzip": "^1.4.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "pump": "^2.0.0"
+  }
+}
