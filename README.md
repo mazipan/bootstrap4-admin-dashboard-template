@@ -7,6 +7,10 @@
 
 [https://mazipan.github.io/bootstrap4-admin-dashboard-template/](https://mazipan.github.io/bootstrap4-admin-dashboard-template/)
 
+## Credit
+
+Thanks for awesome example from [Bootstrap Team](https://getbootstrap.com/docs/4.0/examples/dashboard/#)
+
 ## Development
 
 + Install dependencies : `npm install` or `yarn install`
