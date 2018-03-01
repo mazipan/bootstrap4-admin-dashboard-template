@@ -2,10 +2,13 @@
 
 > Bootstrap 4 admin dashboard template
 
-
 ## Demo
 
 [https://mazipan.github.io/bootstrap4-admin-dashboard-template/](https://mazipan.github.io/bootstrap4-admin-dashboard-template/)
+
+## Screenshoot
+
+![Bootstrap 4 Admin Dashboard Template](https://raw.githubusercontent.com/mazipan/bootstrap4-admin-dashboard-template/master/screenshoot.png)
 
 ## Credit
 
