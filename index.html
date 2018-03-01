@@ -42,7 +42,7 @@
 
 <body>
 
-  <header class="navbar navbar-expand navbar-dark sticky-top bg-dark flex-column flex-md-row bd-navbar">
+  <header class="navbar navbar-expand sticky-top bg-primary navbar-dark flex-column flex-md-row bd-navbar">
     <a class="navbar-brand mr-0 mr-md-2" href="#">
       <img class="navbar-brand--img img-thumbnail" src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32" alt="Irfan Maulana"
         title="Irfan Maulana"> Bootstrap4 Dashboard
@@ -64,7 +64,7 @@
       <li class="nav-item">
         <a class="nav-link p-3">
           <i class="fa fa-envelope-o"></i>
-          <span class="badge badge-primary badge-notif">6</span>
+          <span class="badge badge-danger badge-notif">6</span>
         </a>
       </li>
 
@@ -105,6 +105,11 @@
     <div class="row">
       <aside class="col-md-2 d-none d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
+
+          <h6 class="sidebar-heading">
+            <span>Main Navigation</span>
+          </h6>
+
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link active" href="#">
@@ -135,19 +140,37 @@
             </li>
           </ul>
 
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-3 text-muted">
+          <h6 class="sidebar-heading">
             <span>User Area</span>
-            <span class="d-flex align-items-center text-muted">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </span>
           </h6>
 
           <ul class="nav flex-column">
 
-            <li class="nav-item">
+            <li class="nav-item has-child">
               <a class="nav-link" href="#">
                 <i class="fa fa-user-o"></i> Profile
+                <span class="badge badge-primary">3</span>
+
+                <i class="fa fa-caret-down caret float-right mt-1"></i>
               </a>
+
+              <ul class="nav flex-column is-child">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/mazipan" target="blank" rel="noopener">
+                    <i class="fa fa-github"></i> Github
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://twitter.com/Maz_Ipan" target="blank" rel="noopener">
+                    <i class="fa fa-twitter"></i> Twitter
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/mazipanneh" target="blank" rel="noopener">
+                    <i class="fa fa-facebook"></i> Facebook
+                  </a>
+                </li>
+              </ul>
             </li>
 
             <li class="nav-item">
@@ -183,7 +206,7 @@
         </div>
 
         <div class="d-flex justify-content-between mb-3">
-          <div class="card w-25 text-white bg-info mr-3">
+          <div class="card w-25 text-white bg-primary mr-3">
             <div class="card-header"><i class="fa fa-shopping-bag"></i> New Orders</div>
             <div class="card-body">
               <h3 class="card-title">150</h3>
@@ -221,25 +244,105 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-between mb-3">
-          <div class="card-collapsible card w-50 mr-3">
-            <div class="card-header">
-              Doughnut Chart <i class="fa fa-caret-down caret"></i>
-            </div>
-            <div class="card-body d-flex justify-content-around">
-                <canvas class="chart w-100" id="pieChart"></canvas>
-            </div>
-          </div>
-
-          <div class="card-collapsible card w-50 mr-3">
-            <div class="card-header">
-              Bar Chart <i class="fa fa-caret-down caret"></i>
-            </div>
-            <div class="card-body d-flex justify-content-around">
-                <canvas class="chart w-100" id="barChart"></canvas>
+        <div class="row mb-3">
+          <div class="col pr-0">
+            <div class="card-collapsible card">
+              <div class="card-header">
+                Doughnut Chart <i class="fa fa-caret-down caret"></i>
+              </div>
+              <div class="card-body d-flex justify-content-around">
+                  <canvas class="chart w-100" id="pieChart"></canvas>
+              </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card-collapsible card">
+              <div class="card-header">
+                Bar Chart <i class="fa fa-caret-down caret"></i>
+              </div>
+              <div class="card-body d-flex justify-content-around">
+                  <canvas class="chart w-100" id="barChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="row mb-3">
+          <div class="col pr-0">
+            <div class="card-collapsible card">
+              <div class="card-header">
+                Table <i class="fa fa-caret-down caret"></i>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead class="thead bg-primary text-white">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-collapsible card">
+              <div class="card-header">
+                Quick Form <i class="fa fa-caret-down caret"></i>
+              </div>
+              <div class="card-body">
+                <form>
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Assignee's email">
+                    <div class="input-group-append">
+                      <span class="input-group-text">@example.com</span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Ticket title">
+                  </div>
+
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Ticket description" cols="30" rows="5"></textarea>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-send"></i>
+                        Submit Ticket
+                      </button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
 
       </main>
@@ -248,11 +351,14 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>

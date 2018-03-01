@@ -1,3 +1,19 @@
+@mixin rotate($degrees)
+{
+    -webkit-transform: rotate($degrees);
+        -ms-transform: rotate($degrees);
+         -o-transform: rotate($degrees);
+            transform: rotate($degrees);
+}
+@mixin transition($transition...)
+{
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
 .navbar-brand--img{
   height: 50px;
 }
@@ -8,6 +24,7 @@
   margin-left: .7em;
 }
 
+/* Sidebar */
 .sidebar-sticky{
   position: -webkit-sticky;
   position: sticky;
@@ -21,6 +38,10 @@
 .sidebar .nav-link {
   font-weight: 300;
   color: #333;
+  position: relative;
+  display: block;
+  padding: .5em 1em;
+  text-decoration: none;
 
   &:hover{
     color: #007bff;
@@ -28,6 +49,30 @@
 
   &.active{
     color: #007bff;
+    border-left: 3px solid #007bff;
+  }
+}
+
+.sidebar-heading{
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #eee;
+  color: #7d7a7a;
+}
+
+.nav{
+  .nav {
+    padding-left: 1em;
+    background-color: #eee;
+    display: none;
+  }
+  .caret{
+    @include transition(transform 0.3s);
+  }
+  .active{
+    .caret{
+      @include rotate(180deg);
+    }
   }
 }
 
@@ -52,5 +97,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .caret{
+    @include transition(transform 0.3s);
+  }
+  .active{
+    @include rotate(180deg);
   }
 }
