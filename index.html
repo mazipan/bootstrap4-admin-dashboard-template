@@ -68,6 +68,13 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link p-3">
+          <i class="fa fa-bell-o"></i>
+          <span class="badge badge-success badge-notif">6</span>
+        </a>
+      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
@@ -165,14 +172,74 @@
           <h1 class="h2"><i class="fa fa-tachometer"></i> Dashboard</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
-              <button class="btn btn-sm btn-light">Share</button>
-              <button class="btn btn-sm btn-light">Export</button>
+              <button class="btn btn-sm btn-primary">Share</button>
+              <button class="btn btn-sm btn-primary">Export</button>
             </div>
-            <button class="btn btn-sm btn-light dropdown-toggle">
+            <button class="btn btn-sm btn-primary dropdown-toggle">
               <i class="fa fa-calendar"></i>
               This week
             </button>
           </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-3">
+          <div class="card w-25 text-white bg-info mr-3">
+            <div class="card-header"><i class="fa fa-shopping-bag"></i> New Orders</div>
+            <div class="card-body">
+              <h3 class="card-title">150</h3>
+            </div>
+            <a class="card-footer text-right" href="#">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+          <div class="card w-25 text-white bg-success mr-3">
+            <div class="card-header"><i class="fa fa-bar-chart"></i> Bounce Rate</div>
+            <div class="card-body">
+              <h3 class="card-title">53%</h3>
+            </div>
+            <a class="card-footer text-right" href="#">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+          <div class="card w-25 text-white bg-warning mr-3">
+            <div class="card-header"><i class="fa fa-user-plus"></i> User Registrations</div>
+            <div class="card-body">
+              <h3 class="card-title">44</h3>
+            </div>
+            <a class="card-footer text-right" href="#">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+          <div class="card w-25 text-white bg-danger">
+            <div class="card-header"><i class="fa fa-pie-chart"></i> Unique Visitor</div>
+            <div class="card-body">
+              <h3 class="card-title">65</h3>
+            </div>
+            <a class="card-footer text-right" href="#">
+              More info <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-3">
+          <div class="card-collapsible card w-50 mr-3">
+            <div class="card-header">
+              Doughnut Chart <i class="fa fa-caret-down caret"></i>
+            </div>
+            <div class="card-body d-flex justify-content-around">
+                <canvas class="chart w-100" id="pieChart"></canvas>
+            </div>
+          </div>
+
+          <div class="card-collapsible card w-50 mr-3">
+            <div class="card-header">
+              Bar Chart <i class="fa fa-caret-down caret"></i>
+            </div>
+            <div class="card-body d-flex justify-content-around">
+                <canvas class="chart w-100" id="barChart"></canvas>
+            </div>
+          </div>
+
         </div>
 
       </main>
@@ -187,7 +254,10 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chart.js"></script>
 
 
   <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://www.mazipan.github.io/","name":"Irfan Maulana | Front End Developer","author":"Irfan Maulana","image":"http://mazipan.github.io/images/irfan-maulana.jpg","description":"Irfan Maulana is Front End Developer from Indonesia - Man that craft some code to build a beauty and readable code, experienced in web and desktop technology.","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}</script>

@@ -1,0 +1,1 @@
+function initCardCollapsible(){$(".caret").on("click",function(t){$(this).toggleClass("fa-caret-up","fa-caret-down");var a=$(this).parent(),n=$(a).next();$(n[0]).toggle()})}$(document).ready(function(){initCardCollapsible()});
